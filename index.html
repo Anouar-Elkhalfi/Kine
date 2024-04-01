@@ -286,6 +286,65 @@
     </div>
   </section>
 
+  <!-- Avis clients -->
+  <div class="container-fluid testimonials-section">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="mb-5">Avis clients</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card rounded shadow">
+          <div class="card-body">
+            <h5 class="card-title">Jean Dupont</h5>
+            <p class="card-text">"Excellent kinésithérapeute, je recommande vivement !"</p>
+            <div class="rating">
+              <!-- Ajoutez des étoiles ou d'autres symboles pour la note -->
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card rounded shadow">
+          <div class="card-body">
+            <h5 class="card-title">Marie Martin</h5>
+            <p class="card-text">"Très professionnelle et à l'écoute, je suis très satisfaite de ma rééducation."</p>
+            <div class="rating">
+              <!-- Ajoutez des étoiles ou d'autres symboles pour la note -->
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card rounded shadow">
+          <div class="card-body">
+            <h5 class="card-title">Pauline Dubois</h5>
+            <p class="card-text">"Une kinésithérapeute compétente et sympathique, je la recommande à tous mes amis."</p>
+            <div class="rating">
+              <!-- Ajoutez des étoiles ou d'autres symboles pour la note -->
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -332,39 +391,13 @@
                 <input type="text" class="form-control" id="request" name="request" placeholder="Votre demande" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Submit</button>
           </form>
             <span id = "msg" style="color: green; display: none;">votre message a été envoyé avec succès, je vous contacte au plus vite &#x1F600 </span>
         </div>
       </div>
     </div>
-</section>
 
-  <!-- section prise de contact -->
-  <!-- <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Contact me</h2>
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <form>
-            <div class="mb-3">
-              <label for="fullName" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="fullName" name="fullName" placeholder="First Name" required>
-            </div>
-            <div class="mb-3">
-              <label for="phoneNumber" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <!-- Section footer -->
   <footer class="footer">
     <div class="footer-links">
@@ -377,31 +410,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script>
-    const ant = document.getElementById("date").min = new Date().toISOString().split("T")[0];
-      console.log(ant);
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBhWe7975ua2BeGY0h5S-HHha0Fj8HKU_fbA2bwbrkDI6AKIWwb2018eX5oAU96Hbdkw/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-
-    // reset du formulaires
-    document.querySelector("form[name='submit-to-google-sheet']").addEventListener("submit", function(event) {
-      event.preventDefault(); // Empêche la soumission par défaut du formulaire
-      // Réinitialise le formulaire
-      document.querySelector("form[name='submit-to-google-sheet']").reset();
-      // Affiche le message de confirmation
-      document.getElementById("msg").style.display = "block";
-      // Masque le message de confirmation après 3 secondes
-      setTimeout(function() {
-          document.getElementById("msg").style.display = "none";
-      }, 5000);
-  });
-  </script>
+  <script src = "script.js"></script>
 </body>
 </html>
