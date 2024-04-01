@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 1500; /* Augmentez la valeur du z-index */
 }
+
 /* banner css */
 .banner {
   background-size: cover;
@@ -37,9 +38,10 @@ body {
 
 /* about-secction */
 .about-section {
-  background-color:#F5F7F8; /* Remplacez cette couleur par celle de votre choix */
+  background-color: #F5F7F8; /* Remplacez cette couleur par celle de votre choix */
   padding: 50px 0; /* Ajoutez un peu de marge intérieure pour plus d'espace */
 }
+
 .image-container {
   display: flex;
   justify-content: space-between; /* Ajoute de l'espace entre les images */
