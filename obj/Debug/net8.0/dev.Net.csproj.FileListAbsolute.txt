@@ -1,0 +1,15 @@
+C:\Users\33614\Desktop\dev.Net\bin\Debug\net8.0\dev.Net.exe
+C:\Users\33614\Desktop\dev.Net\bin\Debug\net8.0\dev.Net.deps.json
+C:\Users\33614\Desktop\dev.Net\bin\Debug\net8.0\dev.Net.runtimeconfig.json
+C:\Users\33614\Desktop\dev.Net\bin\Debug\net8.0\dev.Net.dll
+C:\Users\33614\Desktop\dev.Net\bin\Debug\net8.0\dev.Net.pdb
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.AssemblyInfoInputs.cache
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.AssemblyInfo.cs
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.csproj.CoreCompileInputs.cache
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.sourcelink.json
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.dll
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\refint\dev.Net.dll
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.pdb
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.genruntimeconfig.cache
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\ref\dev.Net.dll
