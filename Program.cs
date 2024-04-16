@@ -149,5 +149,57 @@ class Program
         }
     }
 }
+// fin d'encapsulation
+// début de POO Constructeurs 
+using System;
+
+class Building
+{
+    private int floorCount;
+    private double size;
+
+    public Building(int floorCount, double size)
+    {
+        this.floorCount = floorCount;
+        this.size = size;
+    }
+
+    public Building(int floorCount)
+    {
+        this.floorCount = floorCount;
+        this.size = floorCount * 3; // La hauteur idéale d'un étage est de 3m
+    }
+
+    public double GetFloorMaxSize()
+    {
+        return size / floorCount;
+    }
+
+    public int GetFloorCount()
+    {
+        return floorCount;
+    }
+
+    public double GetSize()
+    {
+        return size;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Bienvenue dans le programme de calcul de bâtiment !");
+        Console.WriteLine("Veuillez entrer le nombre d'étages du bâtiment :");
+        int floorCount = Convert.ToInt32(Console.ReadLine());
+
+        Building building = new Building(floorCount);
+
+        Console.WriteLine($"Le bâtiment possède {building.GetFloorCount()} étages.");
+        Console.WriteLine($"La taille maximale d'un étage est de {building.GetFloorMaxSize()} mètres.");
+        Console.WriteLine($"La taille totale du bâtiment est de {building.GetSize()} mètres.");
+    }
+}
 
 
