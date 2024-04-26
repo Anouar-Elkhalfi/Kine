@@ -6,7 +6,7 @@ Console.WriteLine("j'apprends le c#");
 Console.Write("exemple ");
 // declaration de variable: Type nom = valeur;
 // les types :int,string , bool /// nom : estVivan
-int age = 23;
+
 string prenom = "anouar";
 bool estVivan = true;
 // typage implicite
@@ -15,4 +15,5 @@ var taille = 128;
 var faux = false;
 // reaffecter une variable
 taille = 200;
-// test
+int age = 45;
+
