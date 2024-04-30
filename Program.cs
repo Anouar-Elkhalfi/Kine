@@ -1,47 +1,94 @@
 ﻿using System;
-using System.Collections.Generic;
+
+// Classe abstraite Animal
+abstract class Animal
+{
+    public string Name { get; set; }
+    public abstract void Move();
+    public void Eat()
+    {
+        Console.WriteLine($"{Name} is eating.");
+    }
+}
+
+// Classe abstraite pour les animaux bipèdes
+abstract class Biped : Animal
+{
+    public int NumLegs { get; } = 2;
+}
+
+// Classe abstraite pour les animaux quadrupèdes
+abstract class Quadruped : Animal
+{
+    public int NumLegs { get; } = 4;
+}
+
+// Classes concrètes pour chaque espèce d'animal
+
+class Human : Biped
+{
+    public override void Move()
+    {
+        Console.WriteLine($"{Name} is walking on two legs.");
+    }
+}
+
+class Monkey : Biped
+{
+    public override void Move()
+    {
+        Console.WriteLine($"{Name} is swinging from tree to tree.");
+    }
+}
+
+class Elephant : Quadruped
+{
+    public override void Move()
+    {
+        Console.WriteLine($"{Name} is walking on four legs.");
+    }
+}
+
+class Tortoise : Quadruped
+{
+    public override void Move()
+    {
+        Console.WriteLine($"{Name} is moving slowly on four legs.");
+    }
+}
+
+class Lizard : Quadruped
+{
+    public override void Move()
+    {
+        Console.WriteLine($"{Name} is crawling on four legs.");
+    }
+}
 
 class Program
 {
-    static DataManager dataManager;
-    static List<Eleve> eleves;
-
     static void Main(string[] args)
     {
-        string filePath = args.Length > 0 ? args[0] : "data.json";
-        dataManager = new DataManager(filePath);
-        eleves = dataManager.LoadData();
+        // Exemple d'utilisation
 
-        bool exit = false;
-        while (!exit)
-        {
-            Console.WriteLine("Menu Principal:\n1. Gérer Élèves\n2. Gérer Cours\n3. Quitter");
-            string choice = Console.ReadLine();
-            switch (choice)
-            {
-                case "1":
-                    ManageStudents();
-                    break;
-                case "2":
-                    ManageCourses();
-                    break;
-                case "3":
-                    exit = true;
-                    break;
-                default:
-                    Console.WriteLine("Option invalide.");
-                    break;
-            }
-        }
-    }
+        Human human = new Human { Name = "John" };
+        human.Move();
+        human.Eat();
 
-    static void ManageStudents()
-    {
-        // Logique pour gérer les élèves
-    }
+        Monkey monkey = new Monkey { Name = "George" };
+        monkey.Move();
+        monkey.Eat();
 
-    static void ManageCourses()
-    {
-        // Logique pour gérer les cours
+        Elephant elephant = new Elephant { Name = "Dumbo" };
+        elephant.Move();
+        elephant.Eat();
+
+        Tortoise tortoise = new Tortoise { Name = "Tom" };
+        tortoise.Move();
+        tortoise.Eat();
+
+        Lizard lizard = new Lizard { Name = "Larry" };
+        lizard.Move();
+        lizard.Eat();
     }
 }
