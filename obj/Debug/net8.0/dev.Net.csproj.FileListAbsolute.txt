@@ -14,3 +14,5 @@ C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.pdb
 C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.genruntimeconfig.cache
 C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\ref\dev.Net.dll
 C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.csproj.AssemblyReference.cache
+C:\Users\33614\Desktop\dev.Net\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\33614\Desktop\dev.Net\obj\Debug\net8.0\dev.Net.csproj.Up2Date
